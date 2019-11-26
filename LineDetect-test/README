@@ -1,0 +1,20 @@
+## python: 3.7.4 & cv2: 4.1.1
+## python: 3.7.3 & cv2: 3.4.7
+cd /home/kamano/TEST_COLLECTION/ChemicalStructureRecognition
+./docker.run
+docker exec -it xxxx /bin/bash
+- in container -
+cd /Docker/ChemicalStructureRecognition
+python
+- in python -
+import cv2
+import numpy as np
+img = cv2.imread("calendar.png")
+gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+cv2.imwrite("calendar_mod.png", gray)
+gray2 = cv2.bitwise_not(gray)
+cv2.imwrite("calendar_mod2.png", gray)
+lines = cv2.HoughLinesP(gray2, rho=1, theta=np.pi/360, threshold=80, minLineLength=400, maxLineGap=5)
+print(lines)
+lines = cv2.HoughLinesP(gray2, rho=1, theta=np.pi/360, threshold=80, minLineLength=30, maxLineGap=5)
+lines = cv2.HoughLinesP(gray2, rho=1, theta=np.pi/360, threshold=80, minLineLength=80, maxLineGap=5)
