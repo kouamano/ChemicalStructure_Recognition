@@ -1,0 +1,2 @@
+docker run --name osra -v /home/kamano/TEST_COLLECTION/ChemicalStructureRecognition:/Docker/ChemicalStructureRecognition -d berlinguyinca/osra:latest /sbin/init
+docker run --name cv4 -v /home/kamano/TEST_COLLECTION/ChemicalStructureRecognition:/Docker/ChemicalStructureRecognition -d czentye/opencv-video-minimal:latest /sbin/init

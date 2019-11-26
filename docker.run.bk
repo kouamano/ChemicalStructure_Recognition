@@ -1,0 +1,1 @@
+docker run --name osra -v /home/kamano/TEST_COLLECTION/ChemicalStructureRecognition:/Docker/ChemicalStructureRecognition -d berlinguyinca/osra:latest /sbin/init
