@@ -10,16 +10,32 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     14211,        381]
-NotebookOptionsPosition[     12112,        334]
-NotebookOutlinePosition[     12458,        349]
-CellTagsIndexPosition[     12415,        346]
+NotebookDataLength[     16394,        423]
+NotebookOptionsPosition[     14067,        372]
+NotebookOutlinePosition[     14413,        387]
+CellTagsIndexPosition[     14370,        384]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 
 Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"SetDirectory", "[", 
+  "\"\</home/kamano/gitsrc/ChemicalStructureRecognition\>\"", "]"}]], "Input",\
+
+ CellChangeTimes->{{3.78919249698912*^9, 3.78919250452232*^9}, 
+   3.78919254080787*^9},
+ CellLabel->"In[14]:=",ExpressionUUID->"59b5a4d2-1faa-49de-831f-a1d669c435cd"],
+
+Cell[BoxData["\<\"/home/kamano/gitsrc/ChemicalStructureRecognition\"\>"], \
+"Output",
+ CellChangeTimes->{3.789192542780408*^9},
+ CellLabel->"Out[14]=",ExpressionUUID->"1d310aa1-884f-4b21-afc0-38a6a7f783a7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
 Cell["Images", "Section",
  CellChangeTimes->{{3.789191045625144*^9, 
   3.789191056147408*^9}},ExpressionUUID->"e3441ab6-3c4c-4291-bc55-\
@@ -63,116 +79,71 @@ Cell[BoxData[
   ImageSize->{{0., 42.4}, {0., 18.106761565836294`}},
   PlotRange->{{177.5, 318.}, {-30., 30.}}]], "Output",
  CellChangeTimes->{3.782587995962234*^9, 3.7891796444138727`*^9, 
-  3.789191467106554*^9},
- CellLabel->"Out[2]=",ExpressionUUID->"590e38f7-c29c-42a2-92b8-0b84e72c5771"]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"r", "=", 
-  RowBox[{"Rasterize", "[", 
-   RowBox[{"ChemicalData", "[", 
-    RowBox[{"cdata", "[", 
-     RowBox[{"[", "1", "]"}], "]"}], "]"}], "]"}]}]], "Input",
- CellChangeTimes->{{3.782591485515418*^9, 3.782591506398007*^9}},
- CellLabel->"In[3]:=",ExpressionUUID->"af4ce1bd-514f-404c-8f99-968262a2f3ee"],
-
-Cell[BoxData[
- GraphicsBox[
-  TagBox[RasterBox[CompressedData["
-1:eJxTTMoPSmNiYGAo5gASQYnljkVFiZXBAkBOaF5xZnpeaopnXklqemqRRRIz
-UFAUiLWAGMT+PwpGwSgYCFDZ1HT95k1kkdaentPnztHH5FHbB9D2vPJyNEQt
-2wmaDFRz5vz5L1+/wlFTVxdEzcePH7fs3IkVbdi6dcrs2bhkd+3bh99kZNuv
-XL+ONXz+/f//Gwf49evXj58/ccn++fMHv8nE2E55yI/aTnWTR8EQBQDxZOfE
-
-    "], {{0, 21}, {42, 0}}, {0, 255},
-    ColorFunction->RGBColor],
-   BoxForm`ImageTag["Byte", ColorSpace -> "RGB", Interleaving -> True],
-   Selectable->False],
-  DefaultBaseStyle->"ImageGraphics",
-  ImageSizeRaw->{42, 21},
-  PlotRange->{{0, 42}, {0, 21}}]], "Output",
- CellChangeTimes->{3.782591508424016*^9, 3.789179645377982*^9, 
-  3.789191468330717*^9},
- CellLabel->"Out[3]=",ExpressionUUID->"43e26be8-6108-4641-99d4-55be1dee6794"]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"i", "=", 
-  RowBox[{"Image", "[", 
-   RowBox[{"ChemicalData", "[", 
-    RowBox[{"cdata", "[", 
-     RowBox[{"[", "1", "]"}], "]"}], "]"}], "]"}]}]], "Input",
- CellChangeTimes->{{3.782587980427322*^9, 3.782588007775795*^9}, {
-  3.78258810794141*^9, 3.7825881082403603`*^9}},
- CellLabel->"In[4]:=",ExpressionUUID->"347fb23d-66c2-48ff-942d-49fe10e09415"],
-
-Cell[BoxData[
- GraphicsBox[
-  TagBox[RasterBox[CompressedData["
-1:eJxTTMoPSmNiYGAo5gASQYnljkVFiZXBAkBOaF5xZnpeaopnXklqemqRRRIz
-UFAUiLWAGMT+PwpGwSgYCFDZ1HT95k1kkdaentPnztHH5FHbB9D2vPJyNEQt
-2wmaDFRz5vz5L1+/wlFTVxdEzcePH7fs3IkVbdi6dcrs2bhkd+3bh99kZNuv
-XL+ONXz+/f//Gwf49evXj58/ccn++fMHv8nE2E55yI/aTnWTR8EQBQDxZOfE
-
-    "], {{0, 21}, {42, 0}}, {0, 255},
-    ColorFunction->RGBColor],
-   BoxForm`ImageTag["Byte", ColorSpace -> "RGB", Interleaving -> True],
-   Selectable->False],
-  DefaultBaseStyle->"ImageGraphics",
-  ImageSize->{114., Automatic},
-  ImageSizeRaw->{42, 21},
-  PlotRange->{{0, 42}, {0, 21}}]], "Output",
- CellChangeTimes->{3.782588008346266*^9, 3.78258810932248*^9, 
-  3.789179645814721*^9, 3.7891914692461977`*^9},
- CellLabel->"Out[4]=",ExpressionUUID->"0e8a6ce9-47c7-42b3-bec1-4d0592dfe2e5"]
+  3.789191467106554*^9, 3.78919227292325*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"bff60894-43c0-48d0-b924-c98ca6aaedb4"]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{
-  RowBox[{"ImageData", "[", "i", "]"}], "//", "Dimensions"}]], "Input",
- CellChangeTimes->{{3.782591595381297*^9, 3.7825916020567636`*^9}, {
-  3.789179671834608*^9, 3.789179678712122*^9}},
- CellLabel->"In[5]:=",ExpressionUUID->"aba21997-1d99-417d-8a29-e29cac7ba80e"],
-
-Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{"21", ",", "42", ",", "3"}], "}"}]], "Output",
- CellChangeTimes->{3.7825916035819883`*^9, 3.7891796464881144`*^9, 
-  3.78917967982014*^9, 3.789191469512269*^9},
- CellLabel->"Out[5]=",ExpressionUUID->"1b18ffcd-65c7-4fa5-8718-a3b10c2cbaf8"]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"s", "=", 
-  RowBox[{"ChemicalData", "[", 
+  RowBox[{"r", "[", "1", "]"}], "=", 
+  RowBox[{"Rasterize", "[", 
    RowBox[{
-    RowBox[{"cdata", "[", 
-     RowBox[{"[", "1", "]"}], "]"}], ",", "\"\<SMILES\>\""}], 
-   "]"}]}]], "Input",
- CellChangeTimes->{{3.782590035230274*^9, 3.782590057729458*^9}},
- CellLabel->"In[6]:=",ExpressionUUID->"3917f5f6-6cf3-4d84-82db-6d9326ca0517"],
+    RowBox[{"ChemicalData", "[", 
+     RowBox[{"cdata", "[", 
+      RowBox[{"[", "1", "]"}], "]"}], "]"}], ",", 
+    RowBox[{"RasterSize", "\[Rule]", "300"}], ",", 
+    RowBox[{"ImageSize", "\[Rule]", "100"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.782591485515418*^9, 3.782591506398007*^9}, {
+  3.7891922765320387`*^9, 3.789192278161436*^9}, {3.789192332187608*^9, 
+  3.789192339784664*^9}, {3.7891923722987328`*^9, 3.789192378968891*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"af4ce1bd-514f-404c-8f99-968262a2f3ee"],
 
-Cell[BoxData["\<\"[HH]\"\>"], "Output",
- CellChangeTimes->{3.7825900592605352`*^9, 3.7891796469103203`*^9, 
-  3.789191470570911*^9},
- CellLabel->"Out[6]=",ExpressionUUID->"864a825e-254c-41ae-89df-11f921c45ed0"]
+Cell[BoxData[
+ GraphicsBox[
+  TagBox[RasterBox[CompressedData["
+1:eJzt3T1rk2EUgOGoi6N/wd0f4OroWvEHtFjFpUJbKA4FVwehQ0EcxM3BD1AH
+HSpIqUORdhBKKy0iAUWrWD9K7Aexxzj3jWjbpyex18VJSLKcF/LcWRLI8b5L
+PecP12q1oaOtu57ekVODg72XzxxrPTk7MHTxwkD/udMDw/0X+gdP9h1pvXil
+dTtxqFb7/TgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2Hdfv337vLKyfZrN
+ZtG9jUajcu/a+nrRvXSUzc3NymPwfXW16N6tra3KvStfvhTdW+nq2NjAyMj2
+efvuXdG99x89qtz7bGqq6F46ytz8fOUxuHHrVtG96xsblXuHR0eL7q2kQRJp
+MDRIKg2GBkmlwdAgqTQYGiSVBkODpNJgaJBUGgwNkkqDoUFSaTA0SCoNhgZJ
+pcHQIKk0GBoklQZDg6TSYGiQVBoMDZJKg6FBUmkwNEgqDYYGSaXB0CCpNBga
+JJUGQ4Ok0mBokFQaDA2SSoOhQVJpMNo3+KZeb11nubnz4IEGadfg9Zs3ix6/
+76urnd9g1mjwQGnXYNZoUIMHjQZDg6TSYGiQVBoMDZJKg6FBUmkw/pcGP3z8
++GppqXvnxezsxOTk3MJC+pXsZtb//T+UNRjtG1xYXPxZ0t5+R3+3zbeNZj9n
+B7/raNfgtfHxosfvx9pa5d6OarD1sVZ07942+KZen56Z6d55MjFx+96959PT
+6Veym2k0Gv/6xv2hwR0cg7/XFb+T6a4G6VIaDA2SSoOhQVJpMDRIKg2GBkml
+wdAgqTQYGiSVBkODpNJgaJBUGgwNkkqDoUFSaTA0SCoNhgZJpcHQIKk0GBok
+lQZDg6TSYGiQVBoMDZJKg6FBUmkwNEgqDYYGSaXB0CCpNBgaJJUGQ4Ok0mBo
+kFQaDA2SSoMtTycnWzlsn+VPn4rufTk3V7l36fXronvpKO+XlyuPQemP4maz
+Wbn34ePHRfcCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwQPwCCeRV
+PA==
+    "], {{0, 128}, {300, 0}}, {0, 255},
+    ColorFunction->RGBColor],
+   BoxForm`ImageTag["Byte", ColorSpace -> "RGB", Interleaving -> True],
+   Selectable->False],
+  DefaultBaseStyle->"ImageGraphics",
+  ImageSize->100,
+  ImageSizeRaw->{300, 128},
+  PlotRange->{{0, 300}, {0, 128}}]], "Output",
+ CellChangeTimes->{3.782591508424016*^9, 3.789179645377982*^9, 
+  3.789191468330717*^9, 3.789192279264659*^9, 3.789192340875301*^9, 
+  3.7891923797492*^9},
+ CellLabel->"Out[9]=",ExpressionUUID->"8a71c802-802b-4160-a164-56bfdf9f43ae"]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"Information", "[", "i", "]"}]], "Input",
+ RowBox[{"Information", "[", 
+  RowBox[{"r", "[", "1", "]"}], "]"}]], "Input",
  CellChangeTimes->{{3.782588010104088*^9, 3.782588016343568*^9}, {
-  3.7825881120112467`*^9, 3.7825881333523417`*^9}},
- CellLabel->"In[7]:=",ExpressionUUID->"c7e7d7a8-182f-49a4-b7bf-ce12db2b88dd"],
+  3.7825881120112467`*^9, 3.7825881333523417`*^9}, {3.7891926988459873`*^9, 
+  3.789192703467329*^9}},
+ CellLabel->"In[18]:=",ExpressionUUID->"c7e7d7a8-182f-49a4-b7bf-ce12db2b88dd"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -211,7 +182,7 @@ Cell[BoxData[
                    TooltipStyle->"TextStyling"],
                   Annotation[#, "ImageDimensions", "Tooltip"]& ], 
                  RowBox[{"{", 
-                  RowBox[{"42", ",", "21"}], "}"}]},
+                  RowBox[{"300", ",", "128"}], "}"}]},
                 {
                  TagBox[
                   TooltipBox[
@@ -290,12 +261,79 @@ Cell[BoxData[
   InformationData[
    Association[
    "ObjectType" -> "Image", "ColorSpace" -> "RGB", 
-    "ImageDimensions" -> {42, 21}, "Channels" -> 3, "Interleaving" -> True, 
+    "ImageDimensions" -> {300, 128}, "Channels" -> 3, "Interleaving" -> True, 
     "Transparency" -> False, "DataType" -> "Byte"], True]]], "Output",
  CellChangeTimes->{
   3.782588016847875*^9, {3.78258811334753*^9, 3.7825881340101547`*^9}, 
-   3.789179647635508*^9, 3.7891914713902493`*^9},
- CellLabel->"Out[7]=",ExpressionUUID->"6f8d4833-a683-4f4f-b129-7f611e8f024b"]
+   3.789179647635508*^9, 3.7891914713902493`*^9, {3.7891927001076527`*^9, 
+   3.789192703875506*^9}},
+ CellLabel->"Out[18]=",ExpressionUUID->"50d7d397-bb6c-4387-b45a-6ab4ff119536"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"br", "[", "1", "]"}], "=", 
+  RowBox[{"Binarize", "[", 
+   RowBox[{"r", "[", "1", "]"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7891928827280684`*^9, 3.7891929099726543`*^9}},
+ CellLabel->"In[20]:=",ExpressionUUID->"5cdbae9a-a12f-473e-95de-1b25ca05d22e"],
+
+Cell[BoxData[
+ GraphicsBox[
+  TagBox[RasterBox[CompressedData["
+1:eJzt0DFKQ0EUQNGJlduwdwG2lrZxBQlEO4UoiJ1LNwFruZqMGD0H5sNnHp//
+7sX6cXl3NsZ4Ot89lquX6+129Xq7f7l5eN7cb7ZX6/312+5cLsZYAAAAAAAA
+AADAPzY+HGvud5izlVZaaVVp1WnVadVp1WnVadVp1WnVadVp1WnVadVp1WnV
+adVp1WnVadVp1WnVadVp1WnVzW1VHbrFz5izlVZaaVVp1WnVadXNbfX9ua/+
+1/HN2GpOq0PN+ebfbDWDVp1WnVadVp1WnVadVp1WnVadVp1WnVadVp1WnVad
+Vp1WnVadVp1WnVadVp1WnVadVt2krer0KbaqcyeyFQAAAAAAAAAAAMBn3gF9
+/pWi
+    "], {{0, 128}, {300, 0}}, {0, 1},
+    ColorFunction->GrayLevel],
+   BoxForm`ImageTag["Bit", ColorSpace -> Automatic, Interleaving -> None],
+   Selectable->False],
+  DefaultBaseStyle->"ImageGraphics",
+  ImageSize->100,
+  ImageSizeRaw->{300, 128},
+  PlotRange->{{0, 300}, {0, 128}}]], "Output",
+ CellChangeTimes->{{3.789192893896064*^9, 3.789192916367405*^9}},
+ CellLabel->"Out[20]=",ExpressionUUID->"46de9a9f-2496-44db-8cb9-0030b8a53773"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<OSRA-test/br1.jpg\>\"", ",", 
+   RowBox[{"br", "[", "1", "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7891924876045218`*^9, 3.789192491945668*^9}, {
+  3.789192566897203*^9, 3.789192579290608*^9}, {3.789192681336383*^9, 
+  3.789192686115203*^9}, {3.7891929212765493`*^9, 3.789192932078871*^9}},
+ CellLabel->"In[21]:=",ExpressionUUID->"ef57cb78-e672-4705-8832-fafc23cf6b42"],
+
+Cell[BoxData["\<\"OSRA-test/br1.jpg\"\>"], "Output",
+ CellChangeTimes->{3.789192580500893*^9, 3.789192937473711*^9},
+ CellLabel->"Out[21]=",ExpressionUUID->"8503def1-e582-4d0b-859b-ef49966cf659"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"s", "=", 
+  RowBox[{"ChemicalData", "[", 
+   RowBox[{
+    RowBox[{"cdata", "[", 
+     RowBox[{"[", "1", "]"}], "]"}], ",", "\"\<SMILES\>\""}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.782590035230274*^9, 3.782590057729458*^9}},
+ CellLabel->"In[16]:=",ExpressionUUID->"3917f5f6-6cf3-4d84-82db-6d9326ca0517"],
+
+Cell[BoxData["\<\"[HH]\"\>"], "Output",
+ CellChangeTimes->{3.7825900592605352`*^9, 3.7891796469103203`*^9, 
+  3.789191470570911*^9, 3.7891926938212214`*^9},
+ CellLabel->"Out[16]=",ExpressionUUID->"997f77e4-0a35-48a1-afb4-d3861191beb3"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -333,7 +371,7 @@ Cell[BoxData[
 }, Open  ]]
 },
 WindowSize->{808, 911},
-WindowMargins->{{Automatic, 312}, {Automatic, 63}},
+WindowMargins->{{205, Automatic}, {Automatic, 56}},
 FrontEndVersion->"12.0 for Linux x86 (64-bit) (2019\:5e745\:67083\:65e5)",
 StyleDefinitions->"Default.nb"
 ]
@@ -349,37 +387,41 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 151, 3, 68, "Section",ExpressionUUID->"e3441ab6-3c4c-4291-bc55-7615883d132a"],
-Cell[734, 27, 250, 5, 50, "Input",ExpressionUUID->"ee488f20-8a9c-46fa-aaca-720cc00dbedb"],
-Cell[CellGroupData[{
-Cell[1009, 36, 265, 5, 50, "Input",ExpressionUUID->"45c888c4-1872-44df-aea5-b98bb1565b70"],
-Cell[1277, 43, 999, 23, 38, "Output",ExpressionUUID->"590e38f7-c29c-42a2-92b8-0b84e72c5771"]
+Cell[580, 22, 293, 6, 50, "Input",ExpressionUUID->"59b5a4d2-1faa-49de-831f-a1d669c435cd"],
+Cell[876, 30, 206, 3, 35, "Output",ExpressionUUID->"1d310aa1-884f-4b21-afc0-38a6a7f783a7"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2313, 71, 329, 7, 50, "Input",ExpressionUUID->"af4ce1bd-514f-404c-8f99-968262a2f3ee"],
-Cell[2645, 80, 748, 17, 39, "Output",ExpressionUUID->"43e26be8-6108-4641-99d4-55be1dee6794"]
+Cell[1119, 38, 151, 3, 68, "Section",ExpressionUUID->"e3441ab6-3c4c-4291-bc55-7615883d132a"],
+Cell[1273, 43, 250, 5, 50, "Input",ExpressionUUID->"ee488f20-8a9c-46fa-aaca-720cc00dbedb"],
+Cell[CellGroupData[{
+Cell[1548, 52, 265, 5, 50, "Input",ExpressionUUID->"45c888c4-1872-44df-aea5-b98bb1565b70"],
+Cell[1816, 59, 1020, 23, 38, "Output",ExpressionUUID->"bff60894-43c0-48d0-b924-c98ca6aaedb4"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3430, 102, 375, 8, 50, "Input",ExpressionUUID->"347fb23d-66c2-48ff-942d-49fe10e09415"],
-Cell[3808, 112, 803, 18, 74, "Output",ExpressionUUID->"0e8a6ce9-47c7-42b3-bec1-4d0592dfe2e5"]
+Cell[2873, 87, 625, 13, 50, "Input",ExpressionUUID->"af4ce1bd-514f-404c-8f99-968262a2f3ee"],
+Cell[3501, 102, 1636, 32, 60, "Output",ExpressionUUID->"8a71c802-802b-4160-a164-56bfdf9f43ae"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[4648, 135, 290, 5, 50, "Input",ExpressionUUID->"aba21997-1d99-417d-8a29-e29cac7ba80e"],
-Cell[4941, 142, 277, 5, 35, "Output",ExpressionUUID->"1b18ffcd-65c7-4fa5-8718-a3b10c2cbaf8"]
+Cell[5174, 139, 341, 6, 50, "Input",ExpressionUUID->"c7e7d7a8-182f-49a4-b7bf-ce12db2b88dd"],
+Cell[5518, 147, 4949, 122, 149, "Output",ExpressionUUID->"50d7d397-bb6c-4387-b45a-6ab4ff119536"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5255, 152, 333, 8, 50, "Input",ExpressionUUID->"3917f5f6-6cf3-4d84-82db-6d9326ca0517"],
-Cell[5591, 162, 210, 3, 35, "Output",ExpressionUUID->"864a825e-254c-41ae-89df-11f921c45ed0"]
+Cell[10504, 274, 291, 6, 50, "Input",ExpressionUUID->"5cdbae9a-a12f-473e-95de-1b25ca05d22e"],
+Cell[10798, 282, 878, 19, 60, "Output",ExpressionUUID->"46de9a9f-2496-44db-8cb9-0030b8a53773"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5838, 170, 261, 4, 50, "Input",ExpressionUUID->"c7e7d7a8-182f-49a4-b7bf-ce12db2b88dd"],
-Cell[6102, 176, 4892, 121, 149, "Output",ExpressionUUID->"6f8d4833-a683-4f4f-b129-7f611e8f024b"]
+Cell[11713, 306, 429, 7, 50, "Input",ExpressionUUID->"ef57cb78-e672-4705-8832-fafc23cf6b42"],
+Cell[12145, 315, 195, 2, 35, "Output",ExpressionUUID->"8503def1-e582-4d0b-859b-ef49966cf659"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[11031, 302, 160, 3, 55, "Subsection",ExpressionUUID->"ca17fd11-8a51-4a07-a757-6ae643ec2ed9"],
+Cell[12377, 322, 334, 8, 50, "Input",ExpressionUUID->"3917f5f6-6cf3-4d84-82db-6d9326ca0517"],
+Cell[12714, 332, 235, 3, 35, "Output",ExpressionUUID->"997f77e4-0a35-48a1-afb4-d3861191beb3"]
+}, Open  ]],
 Cell[CellGroupData[{
-Cell[11216, 309, 417, 9, 50, "Input",ExpressionUUID->"6978d065-786e-4073-8a48-c1cf9b6e7a0c"],
-Cell[11636, 320, 436, 9, 35, "Output",ExpressionUUID->"0365265f-73e6-4dc1-94f8-db9a1417979f"]
+Cell[12986, 340, 160, 3, 55, "Subsection",ExpressionUUID->"ca17fd11-8a51-4a07-a757-6ae643ec2ed9"],
+Cell[CellGroupData[{
+Cell[13171, 347, 417, 9, 50, "Input",ExpressionUUID->"6978d065-786e-4073-8a48-c1cf9b6e7a0c"],
+Cell[13591, 358, 436, 9, 35, "Output",ExpressionUUID->"0365265f-73e6-4dc1-94f8-db9a1417979f"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
