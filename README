@@ -1,2 +1,22 @@
+# 全体計画
+## Mathematicaによるアルゴリズム作成
+### 対照画像の作成
+* 化合物のみイメージ作成
+* OSRA
+* 精度確認
+### 線分検出
+### テキスト検出
+## FRMから画像取得
+### 線画像作成
+* Mathematica
+### テキスト画像作成
+* Mathematica
+### 線／テキスト画像合成
+* Mathematica
+### テスト
+* OSRA
+## Python/C++によるコマンド/ライブラリ作成
+
+# 参考
 ## 線分検出
 https://qiita.com/tifa2chan/items/d2b6c476d9f527785414
