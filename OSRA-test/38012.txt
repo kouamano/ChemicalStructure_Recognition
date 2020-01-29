@@ -1,0 +1,1 @@
+C1=CN(C=CC1=C[NH+]=O)CCCN2C=CC(=C[NH+]=O)C=C2.[Br-].[Br-]

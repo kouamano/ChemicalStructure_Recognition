@@ -1,0 +1,1 @@
+C=C1(C2(CC3(C1)(C([CH]4(C(C)(CCCC(CO)([CH](CC2)3)4)C([O-])=O))C([O-])=O)))
