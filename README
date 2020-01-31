@@ -5,7 +5,10 @@
   * テキストのみ
   * テキスト／グラフ混在
 * OSRA
+  * from jpg to smiles
+  * from png to smiles
 * 精度確認
+  * Molecule[]では同一構造を確認できない => グラフスペクトルを使う必要あり
 ### 線分検出
 ### テキスト検出
 ## FRMから画像取得
